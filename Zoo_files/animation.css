@@ -1,0 +1,139 @@
+.slideUp {
+    animation-name: slideUp;
+    -webkit-animation-name: slideUp;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+   visibility: visible !important;
+}
+
+@keyframes slideUp {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(90%);
+		
+    } 
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+    }
+}
+
+@-webkit-keyframes slideUp {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(70%);
+    } 
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+    }
+}
+
+.blink {
+  animation: blink-animation 1s steps(2, start);
+  -webkit-animation: blink-animation 1s steps(2, start);
+}
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+
+.swing{
+	-webkit-animation: swing 1s ease;
+            animation: swing 1s ease;
+            -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+}
+
+
+@-webkit-keyframes swing
+        {
+            15%
+            {
+                -webkit-transform: translateX(5px);
+                transform: translateX(5px);
+            }
+            
+            30%
+            {
+                -webkit-transform: translateX(-5px);
+                transform: translateX(-5px);
+            }
+            
+            50%
+            {
+                -webkit-transform: translateX(3px);
+                transform: translateX(3px);
+            }
+            
+            65%
+            {
+                -webkit-transform: translateX(-3px);
+                transform: translateX(-3px);
+            }
+            
+            80%
+            {
+                -webkit-transform: translateX(2px);
+                transform: translateX(2px);
+            }
+            
+            100%
+            {
+                -webkit-transform: translateX(0);
+                transform: translateX(0);
+            }
+        }
+        
+        @keyframes swing
+        {
+            15%
+            {
+                -webkit-transform: translateX(5px);
+                transform: translateX(5px);
+            }
+            
+            30%
+            {
+                -webkit-transform: translateX(-5px);
+                transform: translateX(-5px);
+            }
+            
+            50%
+            {
+                -webkit-transform: translateX(3px);
+                transform: translateX(3px);
+            }
+            
+            65%
+            {
+                -webkit-transform: translateX(-3px);
+                transform: translateX(-3px);
+            }
+            
+            80%
+            {
+                -webkit-transform: translateX(2px);
+                transform: translateX(2px);
+            }
+            
+            100%
+            {
+                -webkit-transform: translateX(0);
+                transform: translateX(0);
+            }
+        }
+        
+        .swing:hover
+			{
+            -webkit-animation: swing 1s ease;
+            animation: swing 1s ease;
+            -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+        }

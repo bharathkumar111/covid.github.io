@@ -1,0 +1,19 @@
+$(window).scroll(function() {
+	$("body").find('.common_p_tag').addClass('slideanim');
+	$("body").find('.inner_page_img1').addClass('swing');
+	$("body").find('.img_div').addClass('slideanim');
+	$("#gallerySLide div").addClass('slideanim');
+	$(".sub_heading").addClass('slideanim');
+	$(".ul_css").addClass('slideanim');
+	$(".heading_text").addClass('blink');
+	
+	
+  $(".slideanim").each(function(){
+    var pos = $(this).offset().top;
+
+    var winTop = $(window).scrollTop();
+    if (pos < winTop + 650) {
+      $(this).addClass("slideUp");
+    }
+  });
+});

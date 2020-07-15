@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Contact Page</title>
+        <link rel="stylesheet" type="text/css" href="css/contactpagestyle1.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <header>
+            <div class="container">
+                <div id="logo">
+                    <img src="image1.jpeg">
+                
+                <nav>
+                    <ul>
+                        <li class="active"><a href="home.html">Home</a></li>
+                        <li><a href="History.html">History</a></li>
+                        <li><a>Know more</a>
+                            <ul>
+                                <li><a href="faq.html">FAQs</a></li>
+                                <li><a href="contactpage.html">CONTACTS</a></li>
+                                <li><a href="zootimings.html">ZOO TIMINGS</a></li>
+                                <li><a href="edu.html">Education</a></li>
+                            </ul>
+                        </li>    
+                           
+                    </ul>
+                </nav>
+            </div>
+            </header>
+    <body>
+
+        <section id="contact">
+            <h1><b>Please contact us for any help</b></h1>
+            <div class="name">
+                <img class="ashwin" src="human.jpg" >
+                <p>Name : ASHWIN THOMAS</p>
+                <p>Contact number : +91 6361561796</p>
+                
+            </div>
+            <div class="name1">
+                <img class="bharath" src="human.jpg" >
+                <p>Name : BHARATH KUMAR</p>
+                <p>Contact number : +91 8310296702</p>
+                
+            </div>
+        </section> <br><br><br><br>
+    <section class="form">
+        <div class="f">
+            
+           <h2>CONTACT US FORM-<BR>DOLL ZOO<br></h2><br><br>
+            <label>Your Name</label><br>
+            <input type="text" name="name" required/><br>
+            <label>Your Email</label><br>
+            <input type="email" name="email" required/><br>
+            <label>Mobile</label><br>
+            <input type="Number" name="mobile" required/><br>
+            <label>Arrival date</label><br>
+            <input type="text" name="date" /><br>
+            <label>Package Theme</label><br>
+            <select id="list">
+                <option value="family">Family</option>
+                <option value="College/School">College/School</option>
+                <option value="Friends/Group">Friends/Group</option>
+                <option value="Honeymoon">Honeymoon</option>
+                <option value="other">other</option>
+            </select><br>
+            <label>Package Duration</label><br>
+            <select id="list">
+                    <option value="1">1 Day</option>
+                    <option value="2">1 Night/2 Days</option>
+                    <option value="3">2 Night/3 Days</option>
+                    <option value="3+">3+ Days</option>
+                </select><br>
+            <label>Number of travellers</label><br>
+            <input type="text" name="Travellers" placeholder="2 Adults/0 kids" /><br>
+            <label id="det">Provide more details</label><br>
+            <input id="in" type="text" name="details" required/><br><br>
+            <button name="Submit" onclick="click();"">Submit Enquiry</button><br><br>
+            <script type="text/javascript">
+                    function click(){
+                    alert("Your Enquiry is recieved");
+                    }
+                </script>   
+            </section>
+    
+</div><br>
+<br><br><br><br><br>
+
+
+        <footer>
+            DOLL ZOO,Copyright &copy;2019
+        </footer>
+    </body>
+</html>

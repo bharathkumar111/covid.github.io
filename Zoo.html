@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<!-- saved from url=(0050)http://www.mysorezoo.info/html/director_corner.php -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Mysuru Zoo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/icon" href="http://www.mysorezoo.info/img/zoo_favicon.ico">
+	
+    <link href="./Zoo_files/bootstrap.min.css" rel="stylesheet">
+    <link href="./Zoo_files/font-awesome.min.css" rel="stylesheet">
+    <link href="./Zoo_files/header_footer.css" rel="stylesheet">
+	<link href="./Zoo_files/common.css" rel="stylesheet">
+ 
+	<script src="./Zoo_files/jquery.min.js.download"></script>
+    <script src="./Zoo_files/bootstrap.min.js.download"></script>
+	<script src="./Zoo_files/animation.js.download"></script>
+	  <link href="./Zoo_files/animation.css" rel="stylesheet">
+	<script>
+		$(document).ready(function(){
+			$('#scroll_p').load('scroll_top.html');
+			$('#footer').load('footer.html');
+			$('#header').load('header.html',function(){hello('id3');});
+		});
+	</script>
+</head>
+<body>    
+    <header id="header">
+<div class="menu_area">
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="background-color:transparent !important;">  <div class="container">
+		<div style="width:80%;color:#fff;float:right;text-align:right !important; margin-top:1%;">
+			<ul class="footer_social" style="float:right;text-align:right !important; width:100%;">
+				<li class="margin_right" style="display:inline-block;text:left;width:40%" id="search_btn">
+					<!-- <form class="navbar-form" role="search" style="margin:0px !important; ">
+						<div class="input-group" style="margin-top:-12px;width:100%;">
+							<input id="search_txt" type="text" class="form-control" placeholder="Search Animals" name="q" style="border-radius:3px !important;margin-right:-20px;">
+							<div class="input-group-btn" style="width:1% !important;">
+								<button class="btn btn-default search_btn_css" type="submit" style="height:34px;" ><i class="glyphicon glyphicon-search" style="margin-top:1%;"></i></button>
+							</div>
+						</div>
+					</form> -->
+				</li>
+				<li class="margin_right" style="display:inline-block">
+					<a id="karanji" data-toggle="tooltip" data-placement="top" title="Karanji lake" class="" href="http://www.mysorezoo.info/html/Karanji_lake.php">
+						<label class="header_a_tag">Karanji Lake</label>
+						<img src="./Zoo_files/karanji_lake.png" class="header_img">
+					</a>
+				</li>
+				<li class="margin_right" style="display:inline-block">
+					<a id="koorgalli" data-toggle="tooltip" data-placement="top" title="Koorgalli Rescue" class="" href="http://www.mysorezoo.info/html/koorgalli_rescue.php">
+						<label class="header_a_tag">Koorgalli Rescue</label>
+						<img src="./Zoo_files/koorgalli_rescue.png" class="header_img">		
+					</a>
+				</li>
+                <li class="margin_right" style="display:inline-block">
+					<a id="about" data-toggle="tooltip" data-placement="top" title="About Zoo" class="soc_tooltip" href="http://www.mysorezoo.info/html/about.php">
+						<i class="header_icons_css fa-paw"></i>
+					</a>
+				</li>
+				<li class="margin_right" style="display:inline-block">
+					<a id="research" data-toggle="tooltip" data-placement="top" title="Research" class="soc_tooltip" href="http://www.mysorezoo.info/html/research.php">
+						<i class="header_icons_css fa-search-plus" aria-hidden="true"></i>
+					</a>
+				</li>
+				<li class="margin_right" style="display:inline-block">
+					<a id="gallery" data-toggle="tooltip" data-placement="top" title="Gallery" class="soc_tooltip" href="http://www.mysorezoo.info/html/gallery.php">
+						<i class="header_icons_css fa-picture-o" aria-hidden="true"></i>
+					</a>
+				</li>
+				
+				<!-- <li class="margin_right" style="display:inline-block">
+					<a data-toggle="tooltip" data-placement="top" title="Notification" class="soc_tooltip"  href="#">
+						<i class="header_icons_css fa-bell"></i>
+					</a>
+				</li> -->				
+			<!--	<li style="display:inline-block">
+					<a id="contact_us" data-toggle="tooltip" data-placement="top" title="Contact Us" class="soc_tooltip header_icons_css" href="contact_us.php">
+						<i class="header_icons_css fa-phone"></i>
+					</a>
+				</li>-->
+            </ul>
+		</div>
+            <div class="navbar-header" style="clear:both">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar" onclick="menu_operation();">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>     
+				<a class="navbar-brand" href="http://www.mysorezoo.info/index.php" style="margin-top:-45px; height:60px;">
+					<img id="logo" src="./Zoo_files/zoo_logo.png" alt="Logo">
+				</a>             
+            </div>
+            <div id="navbar" class="navbar-collapse collapse" style="clear:both;margin-bottom:3%;">
+				<ul id="top-menu" class="nav navbar-nav navbar-right main-nav">
+					<li><a id="id1" href="http://www.mysorezoo.info/html/animals.php">Animals</a></li>
+					<li class="dropdown">
+						<a id="id2" href="http://www.mysorezoo.info/html/director_corner.php#.">Conservations <img src="./Zoo_files/down_arrow.png" class="down_arrow_css"></a>
+						<div class="dropdown-content">
+							<a href="http://www.mysorezoo.info/html/animal_inventory.php">Animal Inventory</a>
+							<!-- <a href="animal_speak.php">Conservation Speak</a> -->
+							<a href="http://www.mysorezoo.info/html/zims.php">ZIMS</a>
+							<a href="http://www.mysorezoo.info/html/collection_plan.php">Collection Plan</a>
+							<!--<a href="animal_acquisition.php">Animal Acquisition</a>
+							<a href="rescue_animals.php">Rescue Animals</a>-->
+						</div>
+					</li>
+					<li class="dropdown">
+						<a id="id3" href="http://www.mysorezoo.info/html/director_corner.php#." class="dropbtn active">Educations <img src="./Zoo_files/down_arrow.png" class="down_arrow_css"></a>
+						<div class="dropdown-content">
+							<a href="http://www.mysorezoo.info/html/internships.php">Internships</a>
+							<a href="http://www.mysorezoo.info/html/orientation_programme.php">Orientational Programme</a>
+							<!--<a href="feed_talk.php">Feed Talk</a>
+							 <a href="youth_club.php">Youth Club Activities</a> -->
+							<!-- <a href="summer_camp.php">Summer Camp</a> -->
+							<a href="http://www.mysorezoo.info/html/volunteers_program.php">Volunteers Program</a>
+							<!-- <a href="teachers_program.php">Teachers Program</a>
+							<a href="animal_keeper_program.php">Animal Keeper Program</a> -->
+						</div>
+					</li>
+					<li class="dropdown">
+						<a id="id4" class="dropbtn" href="http://www.mysorezoo.info/html/director_corner.php#.">Announcement <img src="./Zoo_files/down_arrow.png" class="down_arrow_css"></a>
+						<div class="dropdown-content">
+							<a href="http://www.mysorezoo.info/html/news_events.php">News &amp; Events</a>
+							<a href="http://www.mysorezoo.info/html/news_room.php">News Room</a>
+							<!-- <a href="ongoing_projects.php">Ongoing Projects</a> -->
+							<!-- <a href="daily_events.php">Daily Events</a> -->
+						</div>
+					</li>
+					<li class="dropdown">
+						<a id="id5" href="http://www.mysorezoo.info/html/director_corner.php#." class="dropbtn">Publication <img src="./Zoo_files/down_arrow.png" class="down_arrow_css"></a>
+						<div class="dropdown-content">
+							<a href="http://www.mysorezoo.info/admin/menu_documents/Master-Plan-of-Mysore-Zoo.pdf" target="_blank">Master Plan</a>
+							<a href="http://www.mysorezoo.info/html/newsletter.php">News Letter</a>
+							<a href="http://www.mysorezoo.info/html/annual_report.php">Annual Report</a>
+							<a href="http://www.mysorezoo.info/html/tender_notifications.php">Tender Notifications</a>
+							<a href="http://www.mysorezoo.info/html/other_publication.php">Other Publication</a>
+						</div>
+					</li>
+					<li class="dropdown">
+						<a id="id6" href="http://www.mysorezoo.info/html/director_corner.php#." class="dropbtn">Plan for Visit <img src="./Zoo_files/down_arrow.png" class="down_arrow_css"></a>
+						<div class="dropdown-content">
+							<a href="http://www.mysorezoo.info/html/book_ticket.php">Ticket Booking</a>
+							<a href="http://www.mysorezoo.info/html/tariff_of_zoo.php">Tariff of Zoo</a>
+							<a href="http://www.mysorezoo.info/html/zoo_timings.php">Zoo Timings</a>
+							<a href="http://www.mysorezoo.info/html/zoo_map.php">Zoo Map</a>
+						</div>
+					</li>              
+					<li class="dropdown ddd">
+						<a id="id7" href="http://www.mysorezoo.info/html/director_corner.php#." class="dropbtn">Adoption <img src="./Zoo_files/down_arrow.png" class="down_arrow_css"></a>
+						<div class="dropdown-content content">
+							<a href="http://www.mysorezoo.info/html/animal_adopt.php">Adopt Animal from your Home</a>
+							<a href="http://www.mysorezoo.info/html/adoption_inventory.php">Adoption Details</a>
+						</div>
+					</li>
+				</ul>           
+            </div>
+          </div>     
+        </nav>  
+      </div>
+</header>
+	<div class="sub_form_banner">
+		
+	</div>
+	<br>
+<div class="container1 transparent_bg margin_top margin_bottom">
+	<span class="heading_text blink">Director's Corner</span><br>
+	<br>
+	<img src="./Zoo_files/Ajit_Kulkarni.png" style="width:30%;float:left">
+	<h4 class="common_p_tag1234" style="float:right;width:65%;">
+		<strong>Mr.Ajit Kulkarni IFS.</strong></h4>
+	<p class="common_p_tag1234" style="float:right;width:65%;">
+		Executive Director, Sri Chamarajendra Zoological Gardens, Mysuru.</p>
+	<p class="common_p_tag1234" style="float:right;width:65%;">
+		He is an Indian Forest Service Officer of 2008 batch. He has done M.Sc (Forestry) from University of Agricultural Sciences, Dharwad and Post Graduate Diploma in Advanced Wildlife Management from Wildlife Institute of India, Dehradun. He served as Divisional Forest Officer of Mansa and Patiala district in Punjab. He joined Sri Chamarajendra Zoological Gardens, Mysore on 04.07.2018.</p>
+</div><!--
+<div class="container1 transparent_bg margin_top margin_bottom">
+<span class="heading_text">Director's Corner</span><br><br>
+<img src="../img/page_imgs/director.jpg" style="width:30%;float:left"/>
+<p class="common_p_tag1234" style="float:right;width:65%;"><br/>
+	Smt. K. Kamala, IFS, Deputy Conservator of Forests has taken over the charge of Executive Director of Sri Chamarajendra Zoological Gardens Mysuru on 20th July, 2016</p>
+</div> -->
+<p id="scroll_p" style="float:right;width:100%;">
+
+<style>
+
+scrolll {
+	color: #69C;
+	text-decoration: none;
+	float:right;
+}
+scrolll:hover {
+	color: #F30;
+	float:right;
+}
+
+em {
+	font: italic 100% "Times New Roman", Times, serif;
+}
+
+#back-top {
+	position: fixed;
+	bottom: 30px;
+	//margin-left: 150px;
+	float:right;
+	width:100%;
+}
+#back-top a {
+	width: 50px;
+	display: block;
+	text-align: center;
+	font: 11px/100% Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #bbb;
+	-webkit-transition: 1s;
+	-moz-transition: 1s;
+	transition: 1s;
+	float:right;
+	margin-right:5%;
+}
+#back-top a:hover {
+	color: #000;
+	float:right;
+	magin-right:2%;
+}
+
+#back-top span {
+	width: 50px;
+	height: 50px;
+	display: block;
+	margin-bottom: 7px;
+	background: #ddd url(../img/up-arrow.png) no-repeat center center;
+	background-size: 25px 25px;
+    background-repeat: no-repeat;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 5px;
+	-webkit-transition: 1s;
+	-moz-transition: 1s;
+	transition: 1s;
+}
+#back-top a:hover span {
+	background-color: #777;
+}
+</style>
+<p id="back-top" style="display: none; float: right; width: 100%; z-index: 999999;">
+	<a class="scrolll" href="http://www.mysorezoo.info/html/director_corner.php#top" title="Back to Top"><span class="spanimg"></span></a>
+</p>
+</p>
+<footer id="footer">      <!-- Start footer top area -->
+      <div class="footer_top" style="background-image:url(../img/inside_footer_bg.jpg)">
+        <div class="container">
+          <div class="row">
+            <div class="col-ld-3  col-md-3 col-sm-3">
+              <div class="single_footer_widget">
+                <p class="footer_heading">About Us</p>
+				<ul class="footer_widget_nav">
+                  <li><a href="http://www.mysorezoo.info/html/about.php">About Our Zoo</a></li>
+                  <li><a href="http://www.mysorezoo.info/html/zoo_timings.php">Zoo Timings</a></li>
+                  <li><a href="http://www.mysorezoo.info/html/vission_mission.php">Our Zoo Goals</a></li>
+                  <!-- <li><a href="#">History of Zoo</a></li> -->
+                  <!-- <li><a href="#">Zoo Announcements</a></li> -->
+				  <li><a href="http://www.mysorezoo.info/html/Karanji_lake.php">Karanji Lake Park</a></li>
+                  <!-- <li><a href="#">SiteMap</a></li> -->
+                </ul>
+				<p class="footer_heading">Adoption</p>
+				<ul class="footer_widget_nav">
+                  <li><a href="http://www.mysorezoo.info/html/animal_adopt.php">Animal Adoption</a></li>
+                  <li><a href="http://www.mysorezoo.info/html/adoption_inventory.php">Adoption Inventory</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-ld-3  col-md-3 col-sm-3">
+              <div class="single_footer_widget">
+                <p class="footer_heading">Conservation</p>
+                <ul class="footer_widget_nav">
+                  <li><a href="http://www.mysorezoo.info/html/animal_inventory.php">Animal Inventory</a></li>
+                 <!--  <li><a href="animal_speak.php">Conservation Speak</a></li> -->
+                  <li><a href="http://www.mysorezoo.info/html/collection_plan.php">Collection Plan</a></li>
+				   <li><a href="http://www.mysorezoo.info/html/collection_plan.php">ZIMS</a></li>
+                  <!-- <li><a href="#">Medarks</a></li>
+                  <li><a href="#">Acquisition of Animals</a></li>
+				  <li><a href="#">Animal Exchange</a></li>
+                  <li><a href="#">Captive Breeding Success</a></li> -->
+                </ul>
+				<p class="footer_heading">Announcement</p>
+				<ul class="footer_widget_nav">
+                  <li><a href="http://www.mysorezoo.info/html/news_events.php">News &amp; Events</a></li>
+                  <!-- <li><a href="daily_events.php">Daily Events</a></li> -->
+                </ul>
+              </div>
+            </div>
+            <div class="col-ld-3  col-md-3 col-sm-3">
+              <div class="single_footer_widget">
+                <p class="footer_heading">Plan for visit</p>
+                <ul class="footer_widget_nav">
+                  <li><a href="http://www.mysorezoo.info/html/tariff_of_zoo.php">Tariff of Zoo</a></li>
+                  <li><a href="http://www.mysorezoo.info/html/zoo_map.php">Zoo Map</a></li>
+                  <li><a href="http://www.mysorezoo.info/html/book_ticket.php">Ticket Booking</a></li>
+                </ul>
+				<p class="footer_heading">Publication</p>
+                <ul class="footer_widget_nav">
+                  <li><a href="http://www.mysorezoo.info/admin/menu_documents/Master-Plan-of-Mysore-Zoo.pdf" target="_blank">Master Plan</a></li>
+                  <li><a href="http://www.mysorezoo.info/html/newsletter.php">News Letter</a></li>
+                  <li><a href="http://www.mysorezoo.info/html/annual_report.php">Annual Report</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-ld-3  col-md-3 col-sm-3">
+              <div class="single_footer_widget">
+                <p class="footer_heading">Reach Us</p>
+				 <ul class="footer_widget_nav">
+					<li>
+						<a data-toggle="tooltip" data-placement="top" class="soc_tooltip" href="http://www.mysorezoo.info/html/director_corner.php#.">
+							<table>
+								<tbody><tr>
+									<td style="width:10%;vertical-align:top;">
+										<i class="icons_css fa-map-marker"></i></td>
+									<td style="width:90%;">
+										<a style="cursor:default">Sri Chamarajendra Zoological Gardens, Zoo Main Road Indiranagar, Mysore, Karnataka.</a>
+									</td>
+								</tr>
+							</tbody></table>
+						</a>
+					</li>
+                  <li><a data-toggle="tooltip" data-placement="top" class="soc_tooltip" href="http://www.mysorezoo.info/html/director_corner.php#." style="cursor:default"><i class="icons_css fa-phone"></i>0821 252 0302</a></li>
+                  <li><a data-toggle="tooltip" data-placement="top" style="cursor:default" class="soc_tooltip" href="http://www.mysorezoo.info/html/director_corner.php#."><i class="icons_css fa-envelope-o" style="font-size:20px;"></i>zoomysore@gmail.com</a></li>
+                </ul>
+				<p class="footer_heading">Follow Us On</p>
+                <ul class="footer_social">
+                  <li><a target="_blank" data-toggle="tooltip" data-placement="top" title="Facebook" class="soc_tooltip" href="https://www.facebook.com/mysuruzoo"><i class="fa fa-facebook"></i></a></li>
+					<li><a target="_blank" data-toggle="tooltip" data-placement="top" title="Linkedin" class="soc_tooltip" href="https://www.linkedin.com/in/mysuru-zoo-0455a0146"><i class="fa fa-linkedin"></i></a></li>
+					<li><a target="_blank" data-toggle="tooltip" data-placement="top" title="Twitter" class="soc_tooltip" href="https://twitter.com/MysuruZoo"><i class="fa fa-twitter"></i></a></li>
+                    <!--  <li><a data-toggle="tooltip" data-placement="top" title="Youtube" class="soc_tooltip"  href="#"><i class="fa fa-youtube"></i></a></li> -->
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End footer top area -->
+
+      <!-- Start footer bottom area -->
+      <div class="footer_bottom" style="background-color: #000;">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-6">
+              <div class="footer_bootomLeft">
+                <p class="copyright_txt">© Copyright 2017. Sri Chamarajendra Zoological Gardens,Mysuru. All Rights reserved</p>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6">
+              <div class="footer_bootomRight">
+                <p><a href="http://infopine.com/" rel="nofollow" class="copyright_txt">Powered by <img style="width:14%;margin-top:-14px;" src="./Zoo_files/infopine_logo.png"></a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End footer bottom area -->
+   </footer>
+
+</body></html>
